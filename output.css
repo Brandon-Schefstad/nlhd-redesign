@@ -2164,6 +2164,11 @@ html {
   margin-right: 2rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -2719,6 +2724,10 @@ html {
 
   .xl\:max-w-\[700px\] {
     max-width: 700px;
+  }
+
+  .xl\:max-w-\[1800px\] {
+    max-width: 1800px;
   }
 
   .xl\:translate-x-\[50\%\] {
