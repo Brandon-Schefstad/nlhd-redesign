@@ -2205,6 +2205,10 @@ html {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2644,6 +2648,18 @@ html {
 
   .xl\:mt-\[-1\.5rem\] {
     margin-top: -1.5rem;
+  }
+
+  .xl\:mt-\[-2\.5rem\] {
+    margin-top: -2.5rem;
+  }
+
+  .xl\:mt-\[-5rem\] {
+    margin-top: -5rem;
+  }
+
+  .xl\:mt-\[-4rem\] {
+    margin-top: -4rem;
   }
 
   .xl\:grid {
