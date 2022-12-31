@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<section
-			class="wrapper relative pb-4 flex flex-col gap-8 bg-purple-100 xl:max-w-[1800px] m-auto">
+			class="wrapper relative pb-4 flex flex-col gap-8 bg-purple-100 w-full m-auto">
 			<section
 				class="title flex flex-col gap-3 bg-yellow-100 mt-8 mx-2 py-4 px-6 xl:px-48">
 				<h1 class="text-purple-700 text-5xl text-center font-bold xl:text-left">
@@ -39,7 +39,7 @@
 					src="./defaultcover -mobile.png"
 					alt="" />
 				<section
-					class="absolute desktop-images flex gap-8 invisible xl:visible -z-0 xl:m-auto xl:relative">
+					class="absolute desktop-images flex gap-8 invisible xl:visible w-0 xl:w-full -z-0 xl:m-auto xl:relative">
 					<img class="" src="knotlessplatts.png" alt="" />
 					<img
 						class=""
@@ -115,30 +115,29 @@
 						</a>
 					</ul>
 				</section>
-				<section
-					class="carousel-wrapper overflow-y-hidden scroll-smooth overflow-x-clip">
+				<section class="carousel-wrapper overflow-x-hidden">
 					<section
-						class="carousel grid grid-cols-4 min-w-[400%] overflow-x-scroll bg-yellow-50 xl:overflow-y-hidden xl:overflow-x-clip xl:relative">
+						class="carousel grid grid-cols-4 min-w-[400%] bg-yellow-50 xl:overflow-y-hidden xl:overflow-x-clip xl:relative">
 						<!-- Knotless -->
 						<section
 							id="knotless"
 							class="knotless flex flex-col w-full xl:px-16 xl:py-4 xl:grid xl:grid-cols-2">
 							<section
-								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-[60%]">
+								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-full">
 								<h1
 									class="mb-4 text-purple-700 text-2xl xl:text-5xl col-start-2 col-span-6 mt-4">
 									Knotless Platts
 								</h1>
 								<a href="#lemonade" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700"></i
 								></a>
 							</section>
 							<section
 								class="hairstyle-wrapper grid xl:grid-cols-2 col-span-2 xl:px-24">
 								<section class="image flex flex-col">
 									<img
-										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
+										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:max-h-[500px] xl:max-w-[500px]xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
 										src="knotlessplatts.png"
 										alt="" />
 									<span
@@ -192,25 +191,25 @@
 							id="lemonade"
 							class="knotless flex flex-col w-full xl:px-16 xl:py-4 xl:grid xl:grid-cols-2">
 							<section
-								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-[60%]">
-								<a href="#knotless" class=""
+								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-full">
+								<a href="#lemonade" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700"></i
 								></a>
 								<h1
 									class="mb-4 text-purple-700 text-2xl xl:text-5xl col-start-2 col-span-6 mt-4">
 									Lemonade Braids
 								</h1>
-								<a href="#feedins" class=""
+								<a href="#ponytail" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700"></i
 								></a>
 							</section>
 							<section
 								class="hairstyle-wrapper grid xl:grid-cols-2 col-span-2 xl:px-24">
 								<section class="image flex flex-col">
 									<img
-										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
+										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:max-h-[500px] xl:max-w-[500px]xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
 										src="l-braids.png"
 										alt="" />
 									<span
@@ -244,15 +243,15 @@
 											<div class="divider mt-2 mb-2"></div>
 											<span>$120</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$180</span>
+											<span>$160</span>
 										</section>
 										<section
 											class="xlong-prices flex flex-col px-6 py-4 bg-violet-900 justify-between xl:py-8">
-											<span>$110</span>
+											<span>$120</span>
 											<div class="divider mt-2 mb-2"></div>
 											<span>$140</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$210</span>
+											<span>$180</span>
 										</section>
 									</section>
 								</section>
@@ -263,10 +262,10 @@
 							id="feedins"
 							class="knotless flex flex-col w-full xl:px-16 xl:py-4 xl:grid xl:grid-cols-2">
 							<section
-								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-[60%]">
+								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-full">
 								<a href="#lemonade" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700"></i
 								></a>
 								<h1
 									class="mb-4 text-purple-700 text-2xl xl:text-5xl col-start-2 col-span-6 mt-4">
@@ -274,14 +273,14 @@
 								</h1>
 								<a href="#ponytail" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-right text-purple-700"></i
 								></a>
 							</section>
 							<section
 								class="hairstyle-wrapper grid xl:grid-cols-2 col-span-2 xl:px-24">
 								<section class="image flex flex-col">
 									<img
-										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
+										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:max-h-[500px] xl:max-w-[500px]xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
 										src="sbf.png"
 										alt="" />
 									<span
@@ -334,10 +333,10 @@
 							id="ponytail"
 							class="knotless flex flex-col w-full xl:px-16 xl:py-4 xl:grid xl:grid-cols-2">
 							<section
-								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-[60%]">
+								class="xl:col-span-2 xl:mb-8 grid grid-cols-8 px-8 place-items-center mt-2 mb-2 xl:m-auto xl:text-center xl:w-full">
 								<a href="#feedins" class=""
 									><i
-										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700 xl:text-4xl"></i
+										class="fa-solid p-4 text-2xl fa-circle-chevron-left text-purple-700"></i
 								></a>
 								<h1
 									class="mb-4 text-purple-700 text-2xl xl:text-5xl col-start-2 col-span-6 mt-4">
@@ -348,7 +347,7 @@
 								class="hairstyle-wrapper grid xl:grid-cols-2 col-span-2 xl:px-24">
 								<section class="image flex flex-col">
 									<img
-										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
+										class="aspect-square mb-2 xl:mb-4 max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:max-h-[500px] xl:max-w-[500px]xl:max-h-full xl:max-w-full m-auto xl:px-8 xl:mt-4 xl:m-auto"
 										src="braided-ponytail.jpg"
 										alt="" />
 									<span
