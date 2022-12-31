@@ -2455,6 +2455,10 @@ html {
   --tw-bg-opacity: 0.2;
 }
 
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
 .p-4 {
   padding: 1rem;
 }
