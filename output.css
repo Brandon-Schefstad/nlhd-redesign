@@ -2099,6 +2099,10 @@ html {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -2115,16 +2119,12 @@ html {
   z-index: 10;
 }
 
-.col-span-7 {
-  grid-column: span 7 / span 7;
-}
-
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .col-start-2 {
@@ -2139,9 +2139,9 @@ html {
   margin: auto;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-0 {
@@ -2154,76 +2154,47 @@ html {
   margin-right: 3rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-\[-2rem\] {
-  margin-top: -2rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-\[-2rem\] {
   margin-bottom: -2rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -2238,20 +2209,16 @@ html {
   display: grid;
 }
 
-.aspect-auto {
-  aspect-ratio: auto;
+.aspect-\[1\/2\] {
+  aspect-ratio: 1/2;
 }
 
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
 
-.aspect-\[1\/2\] {
-  aspect-ratio: 1/2;
-}
-
-.aspect-\[2\/1\] {
-  aspect-ratio: 2/1;
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-\[800px\] {
@@ -2262,84 +2229,24 @@ html {
   height: 1px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
 .max-h-\[830px\] {
   max-height: 830px;
-}
-
-.max-h-\[400px\] {
-  max-height: 400px;
-}
-
-.max-h-\[200px\] {
-  max-height: 200px;
-}
-
-.max-h-\[350px\] {
-  max-height: 350px;
 }
 
 .max-h-\[300px\] {
   max-height: 300px;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .w-full {
   width: 100%;
 }
 
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[full\] {
-  width: full;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[400\%\] {
-  width: 400%;
-}
-
-.min-w-\[414px\] {
-  min-width: 414px;
+.w-60 {
+  width: 15rem;
 }
 
 .min-w-\[400\%\] {
   min-width: 400%;
-}
-
-.max-w-\[2000px\] {
-  max-width: 2000px;
-}
-
-.max-w-\[1800px\] {
-  max-width: 1800px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
-.max-w-\[350px\] {
-  max-width: 350px;
 }
 
 .max-w-\[300px\] {
@@ -2350,6 +2257,10 @@ html {
   list-style-type: decimal;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
@@ -2358,8 +2269,8 @@ html {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -2370,8 +2281,40 @@ html {
   place-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-2 {
@@ -2380,22 +2323,6 @@ html {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .place-self-center {
@@ -2422,14 +2349,19 @@ html {
   scroll-behavior: smooth;
 }
 
-.bg-yellow-50 {
+.bg-purple-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 252 232 / var(--tw-bg-opacity));
+  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-400 {
+.bg-yellow-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.bg-purple-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -2437,14 +2369,24 @@ html {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-purple-100 {
+.bg-yellow-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-purple-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity));
 }
 
 .bg-violet-500 {
@@ -2462,46 +2404,26 @@ html {
   background-color: rgb(76 29 149 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
-}
-
-.bg-purple-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
-}
-
-.bg-purple-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
-}
-
-.bg-purple-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
-}
-
-.bg-purple-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
-}
-
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-8 {
@@ -2519,18 +2441,13 @@ html {
   padding-right: 1rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
   padding-bottom: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .pt-4 {
@@ -2549,12 +2466,12 @@ html {
   padding-bottom: 2rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-5xl {
@@ -2567,16 +2484,6 @@ html {
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2585,6 +2492,11 @@ html {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -2620,6 +2532,33 @@ html {
   color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[inset_5px_5px_5px_5px\] {
+  --tw-shadow: inset 5px 5px 5px 5px;
+  --tw-shadow-colored: inset 5px 5px 5px 5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-yellow-50 {
+  --tw-shadow-color: #fefce8;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-yellow-500 {
+  --tw-shadow-color: #eab308;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 * {
   font-family: 'Inter Tight', sans-serif;
 }
@@ -2637,26 +2576,12 @@ html {
     position: relative;
   }
 
-  .xl\:top-8 {
-    top: 2rem;
-  }
-
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
   .xl\:m-auto {
     margin: auto;
-  }
-
-  .xl\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .xl\:mx-\[50\%\] {
-    margin-left: 50%;
-    margin-right: 50%;
   }
 
   .xl\:mx-\[40\%\] {
@@ -2669,56 +2594,40 @@ html {
     margin-right: 35%;
   }
 
+  .xl\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .xl\:mb-8 {
     margin-bottom: 2rem;
   }
 
-  .xl\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .xl\:mr-8 {
-    margin-right: 2rem;
-  }
-
-  .xl\:mr-16 {
-    margin-right: 4rem;
-  }
-
-  .xl\:mr-12 {
-    margin-right: 3rem;
+  .xl\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .xl\:mt-4 {
     margin-top: 1rem;
   }
 
-  .xl\:mt-6 {
-    margin-top: 1.5rem;
+  .xl\:mt-\[-0\.5rem\] {
+    margin-top: -0.5rem;
   }
 
-  .xl\:mt-8 {
-    margin-top: 2rem;
+  .xl\:mt-\[-1rem\] {
+    margin-top: -1rem;
   }
 
-  .xl\:mb-0 {
-    margin-bottom: 0px;
+  .xl\:mt-\[-1\.25rem\] {
+    margin-top: -1.25rem;
   }
 
-  .xl\:mb-\[-2rem\] {
-    margin-bottom: -2rem;
-  }
-
-  .xl\:block {
-    display: block;
+  .xl\:mt-\[-1\.5rem\] {
+    margin-top: -1.5rem;
   }
 
   .xl\:grid {
     display: grid;
-  }
-
-  .xl\:h-\[450px\] {
-    height: 450px;
   }
 
   .xl\:h-\[500px\] {
@@ -2729,139 +2638,56 @@ html {
     height: 100%;
   }
 
+  .xl\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .xl\:h-\[550px\] {
+    height: 550px;
+  }
+
+  .xl\:h-\[525px\] {
+    height: 525px;
+  }
+
   .xl\:max-h-\[750px\] {
     max-height: 750px;
   }
 
-  .xl\:w-\[65\%\] {
-    width: 65%;
-  }
-
-  .xl\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .xl\:w-\[110\%\] {
-    width: 110%;
-  }
-
-  .xl\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .xl\:w-full {
-    width: 100%;
-  }
-
-  .xl\:w-\[1500px\] {
-    width: 1500px;
-  }
-
-  .xl\:w-\[1200px\] {
-    width: 1200px;
+  .xl\:max-h-\[500px\] {
+    max-height: 500px;
   }
 
   .xl\:w-96 {
     width: 24rem;
   }
 
-  .xl\:w-\[400\%\] {
-    width: 400%;
+  .xl\:w-\[50\%\] {
+    width: 50%;
   }
 
-  .xl\:min-w-\[400\%\] {
-    min-width: 400%;
+  .xl\:w-\[60\%\] {
+    width: 60%;
   }
 
-  .xl\:max-w-\[500px\] {
-    max-width: 500px;
-  }
-
-  .xl\:max-w-\[700px\] {
-    max-width: 700px;
+  .xl\:w-\[70\%\] {
+    width: 70%;
   }
 
   .xl\:max-w-\[1800px\] {
     max-width: 1800px;
   }
 
-  .xl\:translate-x-\[50\%\] {
-    --tw-translate-x: 50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .xl\:max-w-\[700px\] {
+    max-width: 700px;
   }
 
-  .xl\:translate-x-\[25\%\] {
-    --tw-translate-x: 25%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .xl\:max-w-\[500px\] {
+    max-width: 500px;
   }
 
-  .xl\:translate-y-\[50\%\] {
-    --tw-translate-y: 50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-y-\[25\%\] {
-    --tw-translate-y: 25%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-y-\[10\%\] {
-    --tw-translate-y: 10%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-y-\[5\%\] {
-    --tw-translate-y: 5%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:-translate-y-\[5\%\] {
-    --tw-translate-y: -5%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:-translate-y-\[10\%\] {
-    --tw-translate-y: -10%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:-translate-y-\[15\%\] {
-    --tw-translate-y: -15%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:-translate-y-\[20\%\] {
-    --tw-translate-y: -20%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[100\%\] {
-    --tw-translate-x: 100%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[120\%\] {
-    --tw-translate-x: 120%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[110\%\] {
-    --tw-translate-x: 110%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[115\%\] {
-    --tw-translate-x: 115%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[80\%\] {
-    --tw-translate-x: 80%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[60\%\] {
-    --tw-translate-x: 60%;
+  .xl\:translate-x-\[2\%\] {
+    --tw-translate-x: 2%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2870,33 +2696,8 @@ html {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .xl\:translate-x-\[10\%\] {
-    --tw-translate-x: 10%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[5\%\] {
-    --tw-translate-x: 5%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[2\.5\%\] {
-    --tw-translate-x: 2.5%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[1\.25\%\] {
-    --tw-translate-x: 1.25%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[1\.5\%\] {
-    --tw-translate-x: 1.5%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .xl\:translate-x-\[2\%\] {
-    --tw-translate-x: 2%;
+  .xl\:-translate-y-\[20\%\] {
+    --tw-translate-y: -20%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2906,6 +2707,10 @@ html {
 
   .xl\:justify-between {
     justify-content: space-between;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 
   .xl\:place-self-center {
@@ -2947,38 +2752,18 @@ html {
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
   }
 
-  .xl\:bg-purple-100 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-  }
-
   .xl\:bg-purple-200 {
     --tw-bg-opacity: 1;
     background-color: rgb(233 213 255 / var(--tw-bg-opacity));
-  }
-
-  .xl\:bg-purple-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(88 28 135 / var(--tw-bg-opacity));
   }
 
   .xl\:bg-opacity-50 {
     --tw-bg-opacity: 0.5;
   }
 
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .xl\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .xl\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .xl\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   .xl\:px-12 {
@@ -2986,9 +2771,9 @@ html {
     padding-right: 3rem;
   }
 
-  .xl\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .xl\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .xl\:py-8 {
@@ -2996,9 +2781,14 @@ html {
     padding-bottom: 2rem;
   }
 
-  .xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .xl\:py-12 {
@@ -3006,27 +2796,30 @@ html {
     padding-bottom: 3rem;
   }
 
-  .xl\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
+  .xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
-  .xl\:px-\[40\%\] {
-    padding-left: 40%;
-    padding-right: 40%;
+  .xl\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .xl\:pt-0 {
     padding-top: 0px;
   }
 
+  .xl\:text-left {
+    text-align: left;
+  }
+
   .xl\:text-center {
     text-align: center;
   }
 
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .xl\:text-right {
+    text-align: right;
   }
 
   .xl\:text-2xl {
@@ -3034,15 +2827,19 @@ html {
     line-height: 2rem;
   }
 
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .xl\:shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .xl\:shadow-md {
@@ -3051,13 +2848,414 @@ html {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
-  .xl\:shadow-black {
-    --tw-shadow-color: #000;
-    --tw-shadow: var(--tw-shadow-colored);
+  .xl\:shadow-\[10px_10px_10px_red\] {
+    --tw-shadow: 10px 10px 10px red;
+    --tw-shadow-colored: 10px 10px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_10px_10px_10px_red\] {
+    --tw-shadow: inset 10px 10px 10px red;
+    --tw-shadow-colored: inset 10px 10px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_4px_red\] {
+    --tw-shadow: inset 0px 0px 4px red;
+    --tw-shadow-colored: inset 0px 0px 4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_10px_0px_4px_red\] {
+    --tw-shadow: inset 10px 0px 4px red;
+    --tw-shadow-colored: inset 10px 0px 4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_0px_4px_red\] {
+    --tw-shadow: inset 5px 0px 4px red;
+    --tw-shadow-colored: inset 5px 0px 4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_0px_0px_red\] {
+    --tw-shadow: inset 5px 0px 0px red;
+    --tw-shadow-colored: inset 5px 0px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_-15px_15px_red\] {
+    --tw-shadow: inset 5px -15px 15px red;
+    --tw-shadow-colored: inset 5px -15px 15px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_-15px_10px_red\] {
+    --tw-shadow: inset 5px -15px 10px red;
+    --tw-shadow-colored: inset 5px -15px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_15px_-15px_10px_red\] {
+    --tw-shadow: inset 15px -15px 10px red;
+    --tw-shadow-colored: inset 15px -15px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_-5px_5px_red\] {
+    --tw-shadow: inset 5px -5px 5px red;
+    --tw-shadow-colored: inset 5px -5px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_5px_5px_red\] {
+    --tw-shadow: inset 5px 5px 5px red;
+    --tw-shadow-colored: inset 5px 5px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_0px_5px_red\] {
+    --tw-shadow: inset 5px 0px 5px red;
+    --tw-shadow-colored: inset 5px 0px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_4px_0px_5px_red\] {
+    --tw-shadow: inset 4px 0px 5px red;
+    --tw-shadow-colored: inset 4px 0px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_2px_0px_5px_red\] {
+    --tw-shadow: inset 2px 0px 5px red;
+    --tw-shadow-colored: inset 2px 0px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_2px_0px_2px_red\] {
+    --tw-shadow: inset 2px 0px 2px red;
+    --tw-shadow-colored: inset 2px 0px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_12px_0px_2px_red\] {
+    --tw-shadow: inset 12px 0px 2px red;
+    --tw-shadow-colored: inset 12px 0px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_0px_2px_red\] {
+    --tw-shadow: inset 5px 0px 2px red;
+    --tw-shadow-colored: inset 5px 0px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-5px_0px_2px_red\] {
+    --tw-shadow: inset -5px 0px 2px red;
+    --tw-shadow-colored: inset -5px 0px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_5px_2px_red\] {
+    --tw-shadow: inset 5px 5px 2px red;
+    --tw-shadow-colored: inset 5px 5px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-5px_-5px_2px_red\] {
+    --tw-shadow: inset -5px -5px 2px red;
+    --tw-shadow-colored: inset -5px -5px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_5px_2px\] {
+    --tw-shadow: inset 5px 5px 2px;
+    --tw-shadow-colored: inset 5px 5px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-5px_-5px_2px\] {
+    --tw-shadow: inset -5px -5px 2px;
+    --tw-shadow-colored: inset -5px -5px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_2px\] {
+    --tw-shadow: inset 0px 0px 2px;
+    --tw-shadow-colored: inset 0px 0px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_12px\] {
+    --tw-shadow: inset 0px 0px 12px;
+    --tw-shadow-colored: inset 0px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-12px_12px\] {
+    --tw-shadow: inset 0px -12px 12px;
+    --tw-shadow-colored: inset 0px -12px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_12px_0px_12px\] {
+    --tw-shadow: inset 12px 0px 12px;
+    --tw-shadow-colored: inset 12px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-12px_0px_12px\] {
+    --tw-shadow: inset -12px 0px 12px;
+    --tw-shadow-colored: inset -12px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_6px_0px_12px\] {
+    --tw-shadow: inset 6px 0px 12px;
+    --tw-shadow-colored: inset 6px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-12px_12px_12px\] {
+    --tw-shadow: inset -12px 12px 12px;
+    --tw-shadow-colored: inset -12px 12px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-12px_12px_24px\] {
+    --tw-shadow: inset -12px 12px 24px;
+    --tw-shadow-colored: inset -12px 12px 24px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_24px\] {
+    --tw-shadow: inset 0px 0px 24px;
+    --tw-shadow-colored: inset 0px 0px 24px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-12px_24px\] {
+    --tw-shadow: inset 0px -12px 24px;
+    --tw-shadow-colored: inset 0px -12px 24px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_12px_24px\] {
+    --tw-shadow: inset 0px 12px 24px;
+    --tw-shadow-colored: inset 0px 12px 24px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_12px_10px\] {
+    --tw-shadow: inset 0px 12px 10px;
+    --tw-shadow-colored: inset 0px 12px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_12px_15px\] {
+    --tw-shadow: inset 0px 12px 15px;
+    --tw-shadow-colored: inset 0px 12px 15px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_12px_12px\] {
+    --tw-shadow: inset 0px 12px 12px;
+    --tw-shadow-colored: inset 0px 12px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_15px\] {
+    --tw-shadow: inset 0px -10px 15px;
+    --tw-shadow-colored: inset 0px -10px 15px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_25px\] {
+    --tw-shadow: inset 0px -10px 25px;
+    --tw-shadow-colored: inset 0px -10px 25px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_25px\] {
+    --tw-shadow: inset 0px 0px 25px;
+    --tw-shadow-colored: inset 0px 0px 25px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_25px_10px\] {
+    --tw-shadow: inset 0px -10px 25px 10px;
+    --tw-shadow-colored: inset 0px -10px 25px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_0px_10px\] {
+    --tw-shadow: inset 0px -10px 0px 10px;
+    --tw-shadow-colored: inset 0px -10px 0px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_0px_150px\] {
+    --tw-shadow: inset 0px -10px 0px 150px;
+    --tw-shadow-colored: inset 0px -10px 0px 150px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-10px_0px_12px\] {
+    --tw-shadow: inset 0px -10px 0px 12px;
+    --tw-shadow-colored: inset 0px -10px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_0px_12px\] {
+    --tw-shadow: inset 0px 0px 0px 12px;
+    --tw-shadow-colored: inset 0px 0px 0px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_0px_3px\] {
+    --tw-shadow: inset 0px 0px 0px 3px;
+    --tw-shadow-colored: inset 0px 0px 0px 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-3px_0px_0px_3px\] {
+    --tw-shadow: inset -3px 0px 0px 3px;
+    --tw-shadow-colored: inset -3px 0px 0px 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-3px_3-px_0px_3px\] {
+    --tw-shadow: inset -3px 3-px 0px 3px;
+    --tw-shadow-colored: inset -3px 3-px 0px 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_-3px_-3px_0px_3px\] {
+    --tw-shadow: inset -3px -3px 0px 3px;
+    --tw-shadow-colored: inset -3px -3px 0px 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_0px_3px\] {
+    --tw-shadow: inset 0px -3px 0px 3px;
+    --tw-shadow-colored: inset 0px -3px 0px 3px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_0px_0px\] {
+    --tw-shadow: inset 0px -3px 0px 0px;
+    --tw-shadow-colored: inset 0px -3px 0px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_10px_0px\] {
+    --tw-shadow: inset 0px -3px 10px 0px;
+    --tw-shadow-colored: inset 0px -3px 10px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_10px_10px\] {
+    --tw-shadow: inset 0px -3px 10px 10px;
+    --tw-shadow-colored: inset 0px -3px 10px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_5px_10px\] {
+    --tw-shadow: inset 0px -3px 5px 10px;
+    --tw-shadow-colored: inset 0px -3px 5px 10px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_-3px_5px_1px\] {
+    --tw-shadow: inset 0px -3px 5px 1px;
+    --tw-shadow-colored: inset 0px -3px 5px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_5px_1px\] {
+    --tw-shadow: inset 0px 0px 5px 1px;
+    --tw-shadow-colored: inset 0px 0px 5px 1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_1px_2px\] {
+    --tw-shadow: inset 0px 0px 1px 2px;
+    --tw-shadow-colored: inset 0px 0px 1px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_1px_20px\] {
+    --tw-shadow: inset 0px 0px 1px 20px;
+    --tw-shadow-colored: inset 0px 0px 1px 20px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_1px_5px\] {
+    --tw-shadow: inset 0px 0px 1px 5px;
+    --tw-shadow-colored: inset 0px 0px 1px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_6px_5px\] {
+    --tw-shadow: inset 0px 0px 6px 5px;
+    --tw-shadow-colored: inset 0px 0px 6px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_2px_5px\] {
+    --tw-shadow: inset 0px 0px 2px 5px;
+    --tw-shadow-colored: inset 0px 0px 2px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_3px_5px\] {
+    --tw-shadow: inset 0px 0px 3px 5px;
+    --tw-shadow-colored: inset 0px 0px 3px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_4px_5px\] {
+    --tw-shadow: inset 0px 0px 4px 5px;
+    --tw-shadow-colored: inset 0px 0px 4px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_40px_5px\] {
+    --tw-shadow: inset 0px 0px 40px 5px;
+    --tw-shadow-colored: inset 0px 0px 40px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_0px_0px_40px_2px\] {
+    --tw-shadow: inset 0px 0px 40px 2px;
+    --tw-shadow-colored: inset 0px 0px 40px 2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:shadow-\[inset_5px_5px_5px_5px\] {
+    --tw-shadow: inset 5px 5px 5px 5px;
+    --tw-shadow-colored: inset 5px 5px 5px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .xl\:shadow-purple-900 {
     --tw-shadow-color: #581c87;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .xl\:shadow-yellow-200 {
+    --tw-shadow-color: #fef08a;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+
+  .xl\:shadow-black {
+    --tw-shadow-color: #000;
     --tw-shadow: var(--tw-shadow-colored);
   }
 }
