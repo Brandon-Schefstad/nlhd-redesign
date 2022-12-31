@@ -2274,6 +2274,22 @@ html {
   max-height: 830px;
 }
 
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
+.max-h-\[200px\] {
+  max-height: 200px;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -2316,6 +2332,18 @@ html {
 
 .max-w-\[1800px\] {
   max-width: 1800px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .list-decimal {
