@@ -2268,6 +2268,10 @@ html {
   max-height: 300px;
 }
 
+.max-h-\[250px\] {
+  max-height: 250px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2290,6 +2294,10 @@ html {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .translate-x-6 {
