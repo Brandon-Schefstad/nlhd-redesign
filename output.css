@@ -2237,6 +2237,18 @@ html {
   height: 1px;
 }
 
+.h-\[750px\] {
+  height: 750px;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[720px\] {
+  height: 720px;
+}
+
 .max-h-\[830px\] {
   max-height: 830px;
 }
