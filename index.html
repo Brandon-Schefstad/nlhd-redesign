@@ -32,13 +32,14 @@
 				</h2>
 			</section>
 
-			<section class="h-[720px] xl:h-[500px]">
+			<section
+				class="h-full relative xl:h-[500px] max-w-[550px] xl:max-w-full m-auto">
 				<img
-					class="absolute overflow-y-clip max-h-[830px] aspect-[1/2] w-full mx-0 left-0 -z-0 xl:invisible"
+					class="overflow-y-clip max-h-[830px] aspect-[1/2] w-full mx-0 left-0 -z-0 xl:invisible xl:absolute"
 					src="./defaultcover -mobile.png"
 					alt="" />
 				<section
-					class="desktop-images flex gap-8 invisible xl:visible absolute -z-0 xl:m-auto xl:translate-x-[2%]">
+					class="absolute desktop-images flex gap-8 invisible xl:visible -z-0 xl:m-auto xl:relative">
 					<img class="" src="knotlessplatts.png" alt="" />
 					<img
 						class=""
@@ -48,7 +49,7 @@
 				</section>
 
 				<section
-					class="mt-12 policies-text mx-12 pt-4 bg-black text-white bg-opacity-30 z-0 absolute text xl:translate-x-[68%] xl:-translate-y-[20%] xl:max-w-[700px] xl:bg-opacity-50 xl:mt-48">
+					class="mt-12 policies-text mx-12 pt-4 bg-black text-white bg-opacity-30 z-0 absolute top-0 text xl:translate-x-[68%] xl:-translate-y-[20%] xl:max-w-[700px] xl:bg-opacity-50 xl:mt-48">
 					<h2 class="relative text-4xl text-center z-10 mb-4 font-bold">
 						Policies
 					</h2>
@@ -83,10 +84,14 @@
 				</section>
 			</section>
 
-			<section class="gallery bg-purple-200 pt-4">
-				<section class="col-start-1 cta my-4 grid mx-12">
-					<button class="btn bg-yellow-400 font-extrabold">
-						<span class="text-purple-700">Book An appointment</span>
+			<section class="gallery bg-purple-200 xl:pt-8">
+				<section
+					class="col-start-1 cta my-12 grid w-48 m-auto xl:w-96 xl:mx-auto xl:my-12">
+					<button
+						class="btn bg-yellow-400 font-extrabold hover:text-yellow-400 block">
+						<span class="text-purple-700 xl:text-2xl h-[80%]"
+							>Book An appointment</span
+						>
 					</button>
 				</section>
 				<h1 class="text-5xl text-purple-700 text-center font-bold">
@@ -101,7 +106,7 @@
 				<div class="divider h-[2px] mt-0 bg-yellow-500 mx-4 xl:mx-[35%]"></div>
 				<section class="styles m-auto text-black mx-2 sticky">
 					<ul
-						class="flex m-auto text-sm text-center mb-4 xl:text-2xl xl:gap-8 xl:w-[50%]">
+						class="flex justify-evenly m-auto text-sm text-center mb-4 xl:text-2xl xl:gap-8 xl:w-[50%] xl:my-12">
 						<a href="#knotless"> <li>Knotless Platts</li> </a
 						><a href="#lemonade"> <li>Lemonade Braids</li> </a
 						><a href="#feedins"> <li>Straight Back Feedins</li> </a
@@ -111,9 +116,9 @@
 					</ul>
 				</section>
 				<section
-					class="carousel-wrapper xl:max-h-[750px] overflow-y-hidden scroll-smooth overflow-x-clip">
+					class="carousel-wrapper overflow-y-hidden scroll-smooth overflow-x-clip">
 					<section
-						class="carousel grid grid-cols-4 min-w-[400%] overflow-x-scroll bg-yellow-50 xl:max-h-[750px] xl:overflow-y-hidden xl:overflow-x-clip xl:relative">
+						class="carousel grid grid-cols-4 min-w-[400%] overflow-x-scroll bg-yellow-50 xl:overflow-y-hidden xl:overflow-x-clip xl:relative">
 						<!-- Knotless -->
 						<section
 							id="knotless"
