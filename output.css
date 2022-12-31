@@ -2192,6 +2192,11 @@ html {
   margin-right: 2rem;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2218,6 +2223,10 @@ html {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .block {
@@ -2258,6 +2267,10 @@ html {
 
 .h-\[650px\] {
   height: 650px;
+}
+
+.h-\[2px\] {
+  height: 2px;
 }
 
 .max-h-\[830px\] {
@@ -2524,6 +2537,10 @@ html {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
