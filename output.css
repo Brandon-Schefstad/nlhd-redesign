@@ -2169,6 +2169,11 @@ html {
   margin-right: 0.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -2211,6 +2216,14 @@ html {
 
 .mb-\[-2rem\] {
   margin-bottom: -2rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .block {
