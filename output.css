@@ -2186,6 +2186,10 @@ html {
   max-width: 250px;
 }
 
+.max-w-0 {
+  max-width: 0rem;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
