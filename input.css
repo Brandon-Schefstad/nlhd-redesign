@@ -12,7 +12,7 @@
 	--slides-in-view: 5;
 	--slide-width: 500px;
 	--slide-height: 500px;
-	--iteration-time: 30s;
+	--iteration-time: 20s;
 }
 
 @keyframes scroll {
@@ -34,7 +34,6 @@
 }
 
 .carousel {
-	padding: 20px 0;
 	overflow: hidden;
 	width: calc(2 * var(--no-of-slides));
 }
