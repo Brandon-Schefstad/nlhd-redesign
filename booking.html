@@ -17,26 +17,36 @@
 			rel="stylesheet" />
 		<title>Document</title>
 	</head>
-	<body>
+	<body class="bg-purple-100">
 		<section
-			class="wrapper relative gap-4 bg-purple-100 w-full grid py-12 px-8 xl:p-16">
-			<h1 class="text-3xl text-purple-700 font-bold xl:text-5xl">
-				Select your time slot below
-			</h1>
-			<div class="divider h-[2px] bg-yellow-500 mx-4 xl:mx-[40%]"></div>
+			class="wrapper gap- relative grid w-full py-12 px-8 xl:px-16 xl:pt-16">
+			<section class="booking grid grid-cols-1 xl:grid-cols-3">
+				<a
+					href="/"
+					class="col-span-2 h-full w-full pt-4 text-sm text-blue-600 lg:text-lg xl:col-span-1 xl:col-span-1 xl:border-t-0 xl:pt-8 xl:text-3xl"
+					><- Return to home</a
+				>
+				<h1
+					class="col-span-3 text-2xl font-bold text-purple-700 xl:col-span-2 xl:text-5xl">
+					Select your time slot below
+				</h1>
+			</section>
+			<div class="divider mx-4 mb-6 h-[2px] bg-yellow-500 xl:mx-[40%]"></div>
 			<iframe
 				src="https://appt.link/nlhd-testing"
 				frameborder="0px"
 				height="800px"
-				class="xl:place-self-center m-auto w-full border-2 border-solid md:w-[80%] lg:w-[70%] xl:w-[65%] border-black"></iframe>
+				class="m-auto w-full border-2 border-solid border-black md:w-[80%] lg:w-[70%] xl:w-[65%] xl:place-self-center"></iframe>
 		</section>
+		<footer
+			class="grid h-[150px] grid-cols-2 place-items-center bg-white text-center text-gray-600 md:grid-cols-3 xl:h-auto xl:w-full xl:grid-cols-1 xl:gap-0 xl:pb-8 xl:pl-8 xl:text-left">
+			<h3 class="h-full w-full pt-8 text-sm lg:text-lg xl:text-xl">
+				Site design by Brandon Schefstad
+			</h3>
+			<section class="flex h-full w-full flex-col pt-8 xl:flex-row xl:gap-6">
+				<i class="fa fa-instagram text-sm lg:text-lg xl:mt-1 xl:text-xl"> </i>
+				<h3 class="text-sm lg:text-lg xl:text-xl">Follow Kenia on Instagram</h3>
+			</section>
+		</footer>
 	</body>
-	<footer
-		class="grid grid-cols-2 bg-white h-[100px] text-gray-700 place-items-center text-center px-4 xl:px-16">
-		<h3 class="text-lg">Site design by Brandon Schefstad</h3>
-		<section>
-			<i class="fa fa-instagram"> </i>
-			<h3>Follow Kenia on Instagram</h3>
-		</section>
-	</footer>
 </html>
