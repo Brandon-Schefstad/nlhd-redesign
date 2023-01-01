@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<section
-			class="wrapper relative m-auto flex w-full flex-col gap-12 bg-purple-100">
+			class="wrapper relative m-auto flex w-full max-w-[1800px] flex-col gap-12 bg-purple-100">
 			<section
 				class="title mx-6 mt-8 flex flex-col gap-6 bg-yellow-100 py-4 px-12 xl:border-y-2 xl:border-solid xl:border-black xl:px-60">
 				<h1 class="text-center text-5xl font-bold text-purple-700 xl:text-left">
@@ -27,33 +27,53 @@
 				</h1>
 			</section>
 			<section
-				class="grid place-items-center gap-8 xl:grid-cols-2 xl:gap-28 xl:pr-28 xl:pl-20">
-				<section class="m-auto max-w-[550px] xl:h-[500px] xl:max-w-full">
+				class="grid place-items-center gap-8 bg-white xl:grid-cols-2 xl:py-8 xl:pr-28 xl:pl-20">
+				<section class="m-auto max-w-[550px] xl:row-span-2 xl:max-w-full">
 					<img
 						class="xl:invisible xl:absolute"
 						src="./defaultcover -mobile.png"
 						alt="" />
 					<section
-						class="carousel__wrapper desktop-images invisible -z-0 h-0 max-w-0 xl:visible xl:relative xl:m-auto xl:h-auto xl:w-full xl:max-w-full xl:overflow-x-scroll">
-						<section class="carousel flex max-h-[450px] gap-8">
-							<img class="carousel__slide" src="knotlessplatts.png" alt="" />
+						class="carousel__wrapper invisible h-0 max-w-0 rounded-lg bg-yellow-100 xl:visible xl:relative xl:m-auto xl:h-auto xl:w-full xl:max-w-full xl:overflow-x-scroll xl:py-6">
+						<section class="carousel flex gap-8">
 							<img
-								class="carousel__slide"
+								class="carousel__slide card"
+								src="knotlessplatts.png"
+								alt="" />
+							<img
+								class="carousel__slide card"
 								src="./straight-back-feedins-with-designs2 2.png"
 								alt="" />
-							<img class="carousel__slide" src="./front-platts2.png" alt="" />
 							<img
-								class="carousel__slide"
+								class="carousel__slide card"
+								src="./front-platts2.png"
+								alt="" />
+							<img
+								class="carousel__slide card"
 								src="large-straight-back-braids.png"
 								alt="" />
-							<img class="carousel__slide" src="two-feedins.png" alt="" />
-							<img class="carousel__slide" src="regsmallplatts.png" alt="" />
-							<img class="carousel__slide" src="knotlessplatts2.png" alt="" />
+							<img class="carousel__slide card" src="two-feedins.png" alt="" />
+							<img
+								class="carousel__slide card"
+								src="regsmallplatts.png"
+								alt="" />
+							<img
+								class="carousel__slide card"
+								src="knotlessplatts2.png"
+								alt="" />
 						</section>
 					</section>
 				</section>
+				<div
+					class="text-wrapper grid gap-6 p-6 text-2xl text-gray-800 xl:py-24 xl:px-16">
+					<p class="text-right">
+						Kenia Tompson has been working on hair for many years.
+					</p>
+					<p class="text-left">She works out of Seffner, Florida.</p>
+				</div>
+
 				<section
-					class="policies-text text z-0 mx-6 bg-purple-900 pt-4 text-white xl:static xl:m-auto xl:mt-6 xl:max-w-[850px] xl:pb-0">
+					class="policies-text text z-0 mx-6 bg-purple-900 pt-4 text-white xl:static xl:col-start-2 xl:m-auto xl:min-w-[750px] xl:pb-0">
 					<h2
 						class="relative z-10 mb-4 text-center text-4xl font-bold xl:text-5xl">
 						Policies
@@ -86,18 +106,6 @@
 						class="block bg-purple-900 py-4 text-center text-lg font-bold md:text-xl lg:text-2xl xl:m-auto xl:pt-4 xl:text-3xl"
 						>Thanks for booking the Next Level Way!</span
 					>
-
-					<section
-						class="cta grid w-full bg-purple-100 py-4 text-xl xl:static xl:mx-auto xl:w-full">
-						<a
-							class="m-auto w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%]"
-							href="booking.html">
-							<button
-								class="block w-[100%] rounded-xl border-2 border-solid border-purple-900 bg-yellow-400 py-2 font-extrabold text-purple-800 hover:border-yellow-400 hover:bg-purple-800 hover:text-yellow-400">
-								<span class="text-lg xl:text-2xl">Go To Booking -></span>
-							</button>
-						</a>
-					</section>
 				</section>
 			</section>
 			<section
@@ -238,7 +246,7 @@
 											<div class="divider mt-2 mb-2"></div>
 											<span>$120</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$160</span>
+											<span>$190</span>
 										</section>
 										<section
 											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
@@ -246,7 +254,7 @@
 											<div class="divider mt-2 mb-2"></div>
 											<span>$140</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$180</span>
+											<span>$210</span>
 										</section>
 									</section>
 								</section>
@@ -305,19 +313,19 @@
 										</section>
 										<section
 											class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
-											<span>$100</span>
+											<span>$80</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$120</span>
+											<span>$110</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$160</span>
+											<span>$140</span>
 										</section>
 										<section
 											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
-											<span>$120</span>
+											<span>$100</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$140</span>
+											<span>$130</span>
 											<div class="divider mt-2 mb-2"></div>
-											<span>$180</span>
+											<span>$160</span>
 										</section>
 									</section>
 								</section>
