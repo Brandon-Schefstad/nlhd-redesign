@@ -2138,6 +2138,10 @@ html {
   height: 0.25rem;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .max-h-\[830px\] {
   max-height: 830px;
 }
@@ -2268,6 +2272,10 @@ html {
 
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
 }
 
 .border-solid {
@@ -2611,6 +2619,13 @@ html {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:max-h-\[400px\] {
     max-height: 400px;
@@ -2630,6 +2645,15 @@ html {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-none {
+    background-image: none;
   }
 }
 
@@ -2904,6 +2928,58 @@ html {
 
   .xl\:bg-opacity-50 {
     --tw-bg-opacity: 0.5;
+  }
+
+  .xl\:bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .xl\:bg-none {
+    background-image: none;
+  }
+
+  .xl\:bg-gradient-to-l {
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .xl\:from-slate-800 {
+    --tw-gradient-from: #1e293b;
+    --tw-gradient-to: rgb(30 41 59 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:from-gray-200 {
+    --tw-gradient-from: #e5e7eb;
+    --tw-gradient-to: rgb(229 231 235 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:from-white {
+    --tw-gradient-from: #fff;
+    --tw-gradient-to: rgb(255 255 255 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:from-black {
+    --tw-gradient-from: #000;
+    --tw-gradient-to: rgb(0 0 0 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:from-purple-200 {
+    --tw-gradient-from: #e9d5ff;
+    --tw-gradient-to: rgb(233 213 255 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:from-purple-100 {
+    --tw-gradient-from: #f3e8ff;
+    --tw-gradient-to: rgb(243 232 255 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .xl\:to-purple-200 {
+    --tw-gradient-to: #e9d5ff;
   }
 
   .xl\:px-16 {
