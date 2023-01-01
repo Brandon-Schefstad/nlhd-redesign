@@ -2336,6 +2336,10 @@ html {
   height: 150px;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .max-h-\[830px\] {
   max-height: 830px;
 }
