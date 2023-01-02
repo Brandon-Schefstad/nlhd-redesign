@@ -2063,6 +2063,10 @@ html {
   grid-row-start: 3;
 }
 
+.row-start-1 {
+  grid-row-start: 1;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -2426,6 +2430,11 @@ html {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-purple-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2605,6 +2614,16 @@ html {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-yellow-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 240 138 / var(--tw-text-opacity));
+}
+
+.text-yellow-100 {
+  --tw-text-opacity: 1;
+  color: rgb(254 249 195 / var(--tw-text-opacity));
 }
 
 * {
@@ -2807,6 +2826,11 @@ html {
     margin-right: 40%;
   }
 
+  .xl\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .xl\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2925,6 +2949,10 @@ html {
 
   .xl\:gap-12 {
     gap: 3rem;
+  }
+
+  .xl\:gap-24 {
+    gap: 6rem;
   }
 
   .xl\:place-self-center {
@@ -3121,6 +3149,26 @@ html {
     padding-bottom: 3rem;
   }
 
+  .xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .xl\:pt-16 {
     padding-top: 4rem;
   }
@@ -3179,6 +3227,10 @@ html {
 
   .xl\:text-\[3rem\] {
     font-size: 3rem;
+  }
+
+  .xl\:text-\[4rem\] {
+    font-size: 4rem;
   }
 
   .xl\:font-normal {
