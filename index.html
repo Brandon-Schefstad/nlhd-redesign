@@ -17,11 +17,11 @@
 			rel="stylesheet" />
 		<title>Kenia Thompson</title>
 	</head>
-	<body>
+	<body class="bg-gray-200">
 		<section
-			class="wrapper relative m-auto flex w-full max-w-[1800px] flex-col gap-12 bg-purple-100">
+			class="wrapper relative m-auto flex w-full max-w-[1800px] flex-col gap-12 bg-white">
 			<section
-				class="title mx-6 mt-8 flex flex-col gap-6 bg-yellow-100 py-4 px-12 xl:border-y-2 xl:border-solid xl:border-black xl:px-60">
+				class="title mx-6 mt-8 flex flex-col gap-6 bg-yellow-200 py-4 px-12 xl:border-b-4 xl:border-solid xl:border-black">
 				<h1
 					class="text-center text-5xl font-bold text-purple-700 xl:text-left xl:text-[5rem]">
 					Next Level Hair Designs
@@ -31,11 +31,12 @@
 				with Kenia Thompson</span
 			>
 			<section
-				class="grid place-items-center gap-8 bg-white pb-4 xl:grid-cols-2 xl:gap-16 xl:py-8 xl:px-16">
+				class="grid place-items-center gap-8 bg-white pb-4 xl:grid-cols-7 xl:gap-12 xl:bg-gradient-to-b xl:from-purple-400 xl:p-16">
+				<!-- Bio -->
 				<div
-					class="text-wrapper grid w-full grid-cols-2 gap-6 bg-purple-900 py-12 px-6 text-lg text-white md:bg-transparent xl:py-12 xl:text-2xl xl:text-black">
+					class="text-wrapper grid w-full grid-cols-2 gap-6 bg-purple-900 py-12 px-6 text-lg text-white md:bg-transparent xl:col-span-3 xl:col-start-1 xl:bg-white xl:p-12 xl:text-2xl xl:text-black">
 					<img
-						class="m-auto xl:max-h-[200px]"
+						class="my-auto ml-4 xl:max-h-[200px]"
 						src="./header-image.jpg"
 						alt="" />
 					<p class="col-start-2 flex flex-col justify-center text-right">
@@ -45,31 +46,48 @@
 					<p class="row-start-2 flex flex-col justify-center text-left">
 						She operates out of Seffner, Florida and nearby cities.
 					</p>
-					<img class="m-auto xl:max-h-[200px]" src="./two-feedins.png" alt="" />
+					<img
+						class="my-auto ml-auto xl:max-h-[200px]"
+						src="./two-feedins.png"
+						alt="" />
 					<p
 						class="col-start-2 row-start-3 flex flex-col justify-center text-right">
 						When not working, Kenia spends time with her children and family.
 					</p>
 					<img
-						class="m-auto xl:max-h-[200px]"
+						class="my-auto xl:max-h-[200px]"
 						src="./regsmallplatts.png"
 						alt="" />
 				</div>
-				<section class="m-auto max-w-[550px] xl:col-start-1 xl:max-w-full">
+				<!-- Gallery -->
+				<section
+					class="m-auto max-w-[550px] xl:col-span-5 xl:col-start-1 xl:max-w-full">
 					<img
 						class="xl:invisible xl:absolute"
 						src="./defaultcover -mobile.png"
 						alt="" />
 					<section
-						class="carousel__wrapper invisible h-0 max-w-0 rounded-lg bg-yellow-100 xl:visible xl:relative xl:m-auto xl:h-auto xl:w-full xl:max-w-full xl:overflow-x-scroll xl:py-6">
-						<section class="carousel flex gap-8">
+						class="invisible h-0 max-w-0 rounded-lg xl:visible xl:relative xl:m-auto xl:h-auto xl:max-w-full xl:py-6">
+						<section
+							class="title bg-yellow-200 py-4 px-12 xl:mb-8 xl:border-b-4 xl:border-solid xl:border-black">
+							<h1
+								class="text-center text-5xl font-bold text-purple-700 xl:text-center xl:text-[3rem]">
+								Gallery
+							</h1>
+						</section>
+						<section class="carousel flex gap-8 xl:overflow-x-scroll">
+							<section class="carousel-card flex flex-col">
+								<img
+									class="carousel__slide card xl:min-w-[500px]"
+									src="./straight-back-feedins-with-designs2 2.png"
+									alt="" />
+								<span class="text-gray-800jhhhhhhhhw m-auto block text-center"
+									>Straight Back Feedins</span
+								>
+							</section>
 							<img
 								class="carousel__slide card"
-								src="knotlessplatts.png"
-								alt="" />
-							<img
-								class="carousel__slide card"
-								src="./straight-back-feedins-with-designs2 2.png"
+								src="./defaultcover.png"
 								alt="" />
 							<img
 								class="carousel__slide card"
@@ -79,11 +97,7 @@
 								class="carousel__slide card"
 								src="large-straight-back-braids.png"
 								alt="" />
-							<img class="carousel__slide card" src="two-feedins.png" alt="" />
-							<img
-								class="carousel__slide card"
-								src="regsmallplatts.png"
-								alt="" />
+							w
 							<img
 								class="carousel__slide card"
 								src="knotlessplatts2.png"
@@ -91,9 +105,9 @@
 						</section>
 					</section>
 				</section>
-
+				<!-- Policies -->
 				<section
-					class="policies-text text z-0 mx-6 bg-purple-900 pt-4 text-white xl:static xl:col-start-2 xl:row-start-1 xl:m-auto xl:min-w-[750px] xl:pb-0">
+					class="policies-text text xl: z-0 mx-6 bg-purple-900 pt-4 text-white xl:static xl:col-span-5 xl:col-start-4 xl:row-start-1 xl:m-auto xl:min-w-[650px] xl:bg-purple-900 xl:pb-0">
 					<h2
 						class="relative z-10 mb-4 text-center text-4xl font-bold xl:text-5xl">
 						Policies
@@ -126,23 +140,25 @@
 						</li>
 					</ol>
 					<span
-						class="block bg-purple-900 px-4 py-4 text-center text-lg font-bold md:text-xl lg:text-2xl xl:m-auto xl:pt-4 xl:text-3xl"
+						class="block px-4 py-4 text-center text-lg font-bold md:text-xl lg:text-2xl xl:m-auto xl:pt-4 xl:text-3xl"
 						>Thanks for booking the <br />Next Level Way!</span
 					>
 				</section>
-				<section class="cta card flex flex-col items-center p-16 xl:text-2xl">
+
+				<section
+					class="cta card col-span-2 flex flex-col items-center p-16 xl:text-2xl">
 					<span class="text-center text-black"
 						>Grab a time now and start feeling great about your hair!</span
 					><a href="/booking.html"
 						><button
-							class="m-auto mt-8 rounded-lg bg-yellow-200 px-12 py-4 font-bold text-purple-700 hover:bg-yellow-500 hover:text-white">
+							class="m-auto mt-8 rounded-lg bg-yellow-400 px-12 py-4 font-bold text-purple-700 hover:bg-yellow-600 hover:text-white">
 							Book An Appointment
 						</button></a
 					>
 				</section>
 			</section>
 			<section
-				class="gallery mt-[-3rem] bg-gradient-to-t from-purple-900 to-white px-4 pt-20">
+				class="gallery mt-[3rem] bg-gradient-to-t from-purple-900 to-white px-4 pt-20 xl:px-8">
 				<h1 class="text-center text-5xl font-bold text-purple-700">
 					Available Styles
 				</h1>
