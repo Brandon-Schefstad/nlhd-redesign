@@ -15,367 +15,373 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="output.css" />
 	</head>
-	<body
-		class="flex min-h-screen flex-col gap-10 bg-white px-2 py-12 text-purple-900">
-		<section class="px-4">
-			<h1 class="title text-3xl font-bold">Next Level Hair Designs</h1>
-			<span class="text-sm">with Kenia Thompson</span>
-		</section>
-
-		<section class="grid grid-cols-2 items-center px-4">
-			<p class="text-lg">
-				Kenia Thompson is an experienced stylist with years of helping others
-				feel confident!
-			</p>
-			<img src="./images/hero.png" alt="" />
-		</section>
-
-		<section class="gallery flex flex-col gap-4 px-2">
-			<h2 class="text-3xl font-bold">Gallery</h2>
-			<section class="max-w-screen carousel">
-				<section class="flex gap-4 overflow-x-scroll">
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/defaultcover -mobile.png"
-							alt="" />
-						<span class="text-lg">Straight-Back Feedins (Large)</span>
-					</section>
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/braided-ponytail-2.png"
-							alt="" />
-						<span class="text-lg">Braided Ponytail (Medium)</span>
-					</section>
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/front-platts2.png"
-							alt="" />
-						<span class="text-lg">Knotless Platts (w/ Design)</span>
-					</section>
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/l-braids.png"
-							alt="" />
-						<span class="text-lg">Lemonade Braids (Small)</span>
-					</section>
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/two-feedins.png"
-							alt="" />
-						<span class="text-lg">Straight-back Feedins (Large)</span>
-					</section>
-					<section class="flex min-w-[250px] flex-col gap-2">
-						<img
-							class="max-h-[250px] rounded-lg"
-							src="./images/regsmallplatts.png"
-							alt="" />
-						<span class="text-lg">Regular Platts (Small)</span>
-					</section>
-				</section>
+	<body class="bg-white">
+		<section
+			class="wrapper flex min-h-screen flex-col gap-10 bg-white px-2 pt-12 text-purple-900">
+			<section class="px-4">
+				<h1 class="title text-3xl font-bold">Next Level Hair Designs</h1>
+				<span class="text-sm">with Kenia Thompson</span>
 			</section>
-			<a
-				href="/booking.html"
-				class="m-auto mt-8 block w-[14rem] bg-yellow-100 py-2 px-4 text-xl font-bold hover:bg-yellow-200 active:bg-yellow-200"
-				>Book an Appointment</a
-			>
-			<section
-				class="gallery mt-[3rem] bg-gradient-to-t from-purple-900 to-white px-4 pt-20 xl:px-8">
-				<h1 class="text-center text-5xl font-bold text-purple-700">
-					Available Styles
-				</h1>
-				<span
-					class="mx-4 mb-8 block p-4 text-center text-xl text-gray-800 xl:col-span-2 xl:text-2xl"
-					>For custom design costs, please call (813)-680-6374.
-				</span>
-
-				<section class="carousel-wrapper overflow-x-hidden">
-					<section
-						class="grid min-w-[400%] grid-cols-4 bg-purple-50 pt-8 xl:relative xl:overflow-y-hidden xl:overflow-x-clip">
-						<!-- Knotless -->
-						<section
-							id="knotless"
-							class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
-							<section
-								class="mt-2 mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
-								<h1
-									class="col-span-6 col-start-2 mb-4 mt-4 text-2xl text-purple-700 xl:text-5xl">
-									Knotless Platts
-								</h1>
-								<a href="#lemonade" class=""
-									><i
-										class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
-								></a>
-							</section>
-							<section
-								class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
-								<section class="image flex flex-col">
-									<img
-										class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
-										src="./images/knotlessplatts.png"
-										alt="" />
-									<span
-										class="col-start-2 m-auto mb-2 block place-self-center text-black"
-										>(Medium)</span
-									>
-								</section>
-								<section
-									class="pricing grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
-									<span
-										class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Long</span
-									>
-									<span
-										class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Extra-Long</span
-									>
-									<section
-										class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
-										<section
-											class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
-											<span class="">Large</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Medium</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Small</span>
-										</section>
-										<section
-											class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
-											<span>$100</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$160</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$200</span>
-										</section>
-										<section
-											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
-											<span>$120</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$180</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$220</span>
-										</section>
-									</section>
-								</section>
-							</section>
+			<section class="grid grid-cols-2 items-center px-4">
+				<p class="col-span-2 text-lg">
+					Kenia Thompson is an experienced stylist with years of helping others
+					feel confident!
+				</p>
+				<img class="col-start-2 row-start-2" src="./images/hero.png" alt="" />
+				<p class="text-lg">See her work below!</p>
+			</section>
+			<section class="gallery flex flex-col gap-4 px-2">
+				<h2 class="text-3xl font-bold">Gallery</h2>
+				<section class="max-w-screen carousel">
+					<section class="flex gap-4 overflow-x-scroll">
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/defaultcover -mobile.png"
+								alt="" />
+							<span class="text-lg">Straight-Back Feedins (Large)</span>
 						</section>
-
-						<!-- Lemonade -->
-						<section
-							id="lemonade"
-							class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
-							<section
-								class="grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
-								<a href="#knotless" class=""
-									><i
-										class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
-								></a>
-								<h1
-									class="col-span-6 col-start-2 mx-4 mt-[-0.5rem] mb-4 text-center text-2xl text-purple-700 xl:text-5xl">
-									Lemonade Braids
-								</h1>
-								<a href="#feedins" class=""
-									><i
-										class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
-								></a>
-							</section>
-							<section
-								class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
-								<section class="image flex flex-col">
-									<img
-										class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
-										src="./images/l-braids.png"
-										alt="" />
-									<span
-										class="col-start-2 m-auto mb-2 block place-self-center text-black"
-										>(Small)</span
-									>
-								</section>
-								<section
-									class="pricing mt-2 mb-4 grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:mt-4 xl:mb-2 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
-									<span
-										class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Long</span
-									>
-									<span
-										class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Extra-Long</span
-									>
-									<section
-										class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
-										<section
-											class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
-											<span class="">Large</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Medium</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Small</span>
-										</section>
-										<section
-											class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
-											<span>$100</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$120</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$190</span>
-										</section>
-										<section
-											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
-											<span>$120</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$140</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$210</span>
-										</section>
-									</section>
-								</section>
-							</section>
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/braided-ponytail-2.png"
+								alt="" />
+							<span class="text-lg">Braided Ponytail (Medium)</span>
 						</section>
-						<!-- Straight-Back Feedins -->
-						<section
-							id="feedins"
-							class="flex w-full flex-col pt-0 xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
-							<section
-								class="mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
-								<a href="#lemonade" class=""
-									><i
-										class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
-								></a>
-								<h1
-									class="col-span-6 col-start-2 text-center text-2xl text-purple-700 xl:text-5xl">
-									Straight Back Feedins
-								</h1>
-								<a href="#ponytail" class=""
-									><i
-										class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
-								></a>
-							</section>
-							<section
-								class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
-								<section class="image flex flex-col">
-									<img
-										class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
-										src="./images/sbf.png"
-										alt="" />
-									<span
-										class="col-start-2 m-auto mb-2 block place-self-center text-black"
-										>(Small)</span
-									>
-								</section>
-								<section
-									class="pricing mt-2 grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
-									<span
-										class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Long</span
-									>
-									<span
-										class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Extra-Long</span
-									>
-									<section
-										class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
-										<section
-											class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
-											<span class="">Large</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Medium</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Small</span>
-										</section>
-										<section
-											class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
-											<span>$80</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$110</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$140</span>
-										</section>
-										<section
-											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
-											<span>$100</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$130</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$160</span>
-										</section>
-									</section>
-								</section>
-							</section>
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/front-platts2.png"
+								alt="" />
+							<span class="text-lg">Knotless Platts (w/ Design)</span>
 						</section>
-						<!-- Braided Ponytail -->
-						<section
-							id="ponytail"
-							class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
-							<section
-								class="mt-2 mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
-								<a href="#feedins" class=""
-									><i
-										class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
-								></a>
-								<h1
-									class="col-span-6 col-start-2 mb-4 mt-4 text-2xl text-purple-700 xl:text-5xl">
-									Braided Ponytail
-								</h1>
-							</section>
-							<section
-								class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
-								<section class="image flex flex-col">
-									<img
-										class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
-										src="./images/braided-ponytail.jpg"
-										alt="" />
-									<span
-										class="col-start-2 m-auto mb-2 block place-self-center text-black"
-										>(Medium)</span
-									>
-								</section>
-								<section
-									class="pricing grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
-									<span
-										class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Long</span
-									>
-									<span
-										class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
-										>Extra-Long</span
-									>
-									<section
-										class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
-										<section
-											class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
-											<span class="">Large</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Medium</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span class="">Small</span>
-										</section>
-										<section
-											class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
-											<span>$120</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$150</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$175</span>
-										</section>
-										<section
-											class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
-											<span>$150</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$175</span>
-											<div class="divider mt-2 mb-2"></div>
-											<span>$200</span>
-										</section>
-									</section>
-								</section>
-							</section>
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/l-braids.png"
+								alt="" />
+							<span class="text-lg">Lemonade Braids (Small)</span>
+						</section>
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/two-feedins.png"
+								alt="" />
+							<span class="text-lg">Straight-back Feedins (Large)</span>
+						</section>
+						<section class="flex min-w-[250px] flex-col gap-2">
+							<img
+								class="max-h-[250px] rounded-lg"
+								src="./images/regsmallplatts.png"
+								alt="" />
+							<span class="text-lg">Regular Platts (Small)</span>
 						</section>
 					</section>
 				</section>
+				<a
+					href="/booking.html"
+					class="m-auto mt-8 block w-[14rem] bg-yellow-100 py-2 px-4 text-xl font-bold hover:bg-yellow-200 active:bg-yellow-200"
+					>Book an Appointment</a
+				>
+				<section
+					class="gallery mt-[3rem] bg-gradient-to-t from-purple-900 to-white px-4 pt-20 xl:px-8">
+					<h1 class="text-center text-5xl font-bold text-purple-700">
+						Available Styles
+					</h1>
+					<span
+						class="mx-4 mb-8 block p-4 text-center text-xl text-gray-800 xl:col-span-2 xl:text-2xl"
+						>For custom design costs, please call (813)-680-6374.
+					</span>
+					<section class="carousel-wrapper overflow-x-hidden">
+						<section
+							class="grid min-w-[400%] grid-cols-4 bg-purple-50 pt-8 xl:relative xl:overflow-y-hidden xl:overflow-x-clip">
+							<!-- Knotless -->
+							<section
+								id="knotless"
+								class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
+								<section
+									class="mt-2 mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
+									<h1
+										class="col-span-6 col-start-2 mb-4 mt-4 text-2xl text-purple-700 xl:text-5xl">
+										Knotless Platts
+									</h1>
+									<a href="#lemonade" class=""
+										><i
+											class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
+									></a>
+								</section>
+								<section
+									class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
+									<section class="image flex flex-col">
+										<img
+											class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
+											src="./images/knotlessplatts.png"
+											alt="" />
+										<span
+											class="col-start-2 m-auto mb-2 block place-self-center text-black"
+											>(Medium)</span
+										>
+									</section>
+									<section
+										class="pricing grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
+										<span
+											class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Long</span
+										>
+										<span
+											class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Extra-Long</span
+										>
+										<section
+											class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
+											<section
+												class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
+												<span class="">Large</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Medium</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Small</span>
+											</section>
+											<section
+												class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
+												<span>$100</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$160</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$200</span>
+											</section>
+											<section
+												class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
+												<span>$120</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$180</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$220</span>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<!-- Lemonade -->
+							<section
+								id="lemonade"
+								class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
+								<section
+									class="grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
+									<a href="#knotless" class=""
+										><i
+											class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
+									></a>
+									<h1
+										class="col-span-6 col-start-2 mx-4 mt-[-0.5rem] mb-4 text-center text-2xl text-purple-700 xl:text-5xl">
+										Lemonade Braids
+									</h1>
+									<a href="#feedins" class=""
+										><i
+											class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
+									></a>
+								</section>
+								<section
+									class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
+									<section class="image flex flex-col">
+										<img
+											class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
+											src="./images/l-braids.png"
+											alt="" />
+										<span
+											class="col-start-2 m-auto mb-2 block place-self-center text-black"
+											>(Small)</span
+										>
+									</section>
+									<section
+										class="pricing mt-2 mb-4 grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:mt-4 xl:mb-2 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
+										<span
+											class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Long</span
+										>
+										<span
+											class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Extra-Long</span
+										>
+										<section
+											class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
+											<section
+												class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
+												<span class="">Large</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Medium</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Small</span>
+											</section>
+											<section
+												class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
+												<span>$100</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$120</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$190</span>
+											</section>
+											<section
+												class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
+												<span>$120</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$140</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$210</span>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<!-- Straight-Back Feedins -->
+							<section
+								id="feedins"
+								class="flex w-full flex-col pt-0 xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
+								<section
+									class="mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
+									<a href="#lemonade" class=""
+										><i
+											class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
+									></a>
+									<h1
+										class="col-span-6 col-start-2 text-center text-2xl text-purple-700 xl:text-5xl">
+										Straight Back Feedins
+									</h1>
+									<a href="#ponytail" class=""
+										><i
+											class="fa-solid fa-circle-chevron-right p-4 text-2xl text-purple-700"></i
+									></a>
+								</section>
+								<section
+									class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
+									<section class="image flex flex-col">
+										<img
+											class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
+											src="./images/sbf.png"
+											alt="" />
+										<span
+											class="col-start-2 m-auto mb-2 block place-self-center text-black"
+											>(Small)</span
+										>
+									</section>
+									<section
+										class="pricing mt-2 grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
+										<span
+											class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Long</span
+										>
+										<span
+											class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Extra-Long</span
+										>
+										<section
+											class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
+											<section
+												class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
+												<span class="">Large</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Medium</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Small</span>
+											</section>
+											<section
+												class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
+												<span>$80</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$110</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$140</span>
+											</section>
+											<section
+												class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
+												<span>$100</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$130</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$160</span>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<!-- Braided Ponytail -->
+							<section
+								id="ponytail"
+								class="knotless flex w-full flex-col xl:grid xl:grid-cols-2 xl:px-16 xl:py-4">
+								<section
+									class="mt-2 mb-2 grid grid-cols-8 place-items-center px-8 xl:col-span-2 xl:m-auto xl:mb-8 xl:w-full xl:text-center">
+									<a href="#feedins" class=""
+										><i
+											class="fa-solid fa-circle-chevron-left p-4 text-2xl text-purple-700"></i
+									></a>
+									<h1
+										class="col-span-6 col-start-2 mb-4 mt-4 text-2xl text-purple-700 xl:text-5xl">
+										Braided Ponytail
+									</h1>
+								</section>
+								<section
+									class="hairstyle-wrapper col-span-2 grid xl:grid-cols-2 xl:px-24">
+									<section class="image flex flex-col">
+										<img
+											class="xl:max-w-[500px]xl:max-h-full m-auto mb-2 aspect-square max-h-[250px] max-w-[250px] md:max-h-[400px] md:max-w-[400px] xl:m-auto xl:mb-4 xl:mt-4 xl:max-h-[500px] xl:max-w-full xl:px-8"
+											src="./images/braided-ponytail.jpg"
+											alt="" />
+										<span
+											class="col-start-2 m-auto mb-2 block place-self-center text-black"
+											>(Medium)</span
+										>
+									</section>
+									<section
+										class="pricing grid grid-cols-3 bg-yellow-50 px-6 pt-6 pb-4 text-center text-yellow-100 xl:place-self-center xl:py-12 xl:px-8 xl:text-3xl xl:shadow-lg xl:shadow-purple-900">
+										<span
+											class="col-start-2 border-purple-500 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Long</span
+										>
+										<span
+											class="col-start-3 border-purple-700 py-[0.25rem] font-thin text-black xl:mb-4 xl:place-self-center xl:border-none xl:font-normal"
+											>Extra-Long</span
+										>
+										<section
+											class="prices-wrapper relative z-10 col-span-3 mb-4 grid grid-cols-3 xl:shadow-[inset_5px_5px_5px_5px] xl:shadow-black">
+											<section
+												class="sizes flex flex-col justify-between bg-violet-500 px-2 py-4 font-bold xl:px-12 xl:py-8">
+												<span class="">Large</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Medium</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span class="">Small</span>
+											</section>
+											<section
+												class="long-prices flex flex-col justify-between bg-violet-700 px-6 py-4 xl:py-8">
+												<span>$120</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$150</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$175</span>
+											</section>
+											<section
+												class="xlong-prices flex flex-col justify-between bg-violet-900 px-6 py-4 xl:py-8">
+												<span>$150</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$175</span>
+												<div class="divider mt-2 mb-2"></div>
+												<span>$200</span>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+						</section>
+					</section>
+				</section>
 			</section>
 		</section>
+		<footer class="footer m-auto bg-purple-900 p-10">
+			<div class="text-white">
+				<span class="footer-title text-purple-50">Company</span>
+				<a class="link-hover link">Instagram</a>
+				<a class="link-hover link">Book an Appointment</a>
+			</div>
+		</footer>
 	</body>
 </html>
