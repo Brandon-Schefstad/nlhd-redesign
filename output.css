@@ -1958,6 +1958,10 @@ html {
   top: 3rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
