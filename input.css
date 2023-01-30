@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 * {
-	font-family: 'Inter Tight', sans-serif;
+	font-family: 'Josefin Slab', serif;
 	scroll-behavior: smooth;
+}
+.title {
+	font-family: 'Dancing Script', cursive;
 }
 
 :root {
