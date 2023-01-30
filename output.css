@@ -2345,6 +2345,11 @@ html {
   padding-right: 0.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2477,6 +2482,11 @@ html {
   color: rgb(250 245 255 / var(--tw-text-opacity));
 }
 
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
 * {
   font-family: 'Josefin Slab', serif;
   scroll-behavior: smooth;
@@ -2533,6 +2543,10 @@ html {
 .active\:bg-yellow-200:active {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.active\:underline:active {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
