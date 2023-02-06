@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	font-family: 'Josefin Slab', serif;
-	scroll-behavior: smooth;
-}
-.title {
-	font-family: 'Dancing Script', cursive;
-}
-
 :root {
 	--secondary: #4c1d95;
 	--primary: #b495fd;
